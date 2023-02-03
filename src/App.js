@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './hidden.svg';
 import './App.css';
 
 function App() {
@@ -6,16 +6,21 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        <form>
-          <label>
-            Name:
-          <input type="text" defaultValue="password" name="name" />
+        
+      </header>
+      <body>
+      <p>
+        <div className='cracked'>
+        <form className='input'>
+          <label >
+          <input type="text" placeholder="password" name="name" />
           </label>
           <input type="submit"  value="cracked?" />
         </form>
+        </div>
+        
         </p>
-      </header>
+      </body>
     </div>
   );
 }

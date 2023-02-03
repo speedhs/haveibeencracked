@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import logo from './logo192.png';
+import logo from './hidden.svg';
 
 const Navbar = () => (
   <nav>
@@ -8,7 +8,7 @@ const Navbar = () => (
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#">Team</a></li>
     </ul>
   </nav>
 );

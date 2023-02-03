@@ -1,7 +1,9 @@
 nav {
     display: flex;
     justify-content: center;
-    background-color: purple;
+    /*background-color: purple;*/
+    background: linear-gradient(to left, #5a189a, #240046, #10002b);
+
     color: white;
     padding: 15px 0;
   }
