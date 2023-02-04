@@ -23,7 +23,7 @@
 
 .cracked {
   padding: 6vh;
-  background-color: #7b2cbf;
+  background: linear-gradient(to top,#9d4edd,#c77dff);
   min-height: 12vh;
 }
 
