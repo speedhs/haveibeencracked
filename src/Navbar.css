@@ -10,6 +10,7 @@ nav {
   img {
     height: 35px;
     margin-right: 20px;
+    
   }
   ul {
     display: flex;
@@ -25,5 +26,7 @@ nav {
   a {
     color: white;
     text-decoration: none;
+    font-size: 3.5vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   

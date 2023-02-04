@@ -1,4 +1,4 @@
-import logo from './hidden.svg';
+import logo from './hibc.png';
 import './App.css';
 
 function App() {
@@ -6,10 +6,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        
       </header>
       <body>
-      <p>
+  
         <div className='cracked'>
         <form className='input'>
           <label >
@@ -19,7 +18,7 @@ function App() {
         </form>
         </div>
         
-        </p>
+  
       </body>
     </div>
   );

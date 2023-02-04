@@ -1,0 +1,22 @@
+footer {
+    background-color: #240046;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .footer-links a {
+    color: white;
+    margin: 0 10px;
+  }
+  
+  .footer-copyright {
+    margin-top: 10px;
+  }
+  
