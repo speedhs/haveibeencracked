@@ -1,0 +1,25 @@
+.About {
+    text-align: center;
+  }
+  
+  .About-header {
+    background-color: #240046;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .About-logo {
+    height: 15vmin;
+  }
+  
+  .about {
+    background-color: #240046;
+    color: white;
+    padding: 2vh;
+  }
+  
