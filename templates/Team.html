@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/Team.css">
+    <link rel="stylesheet" href="../static/Navbar.css">
+    <link rel="stylesheet" href="../static/Footer.css">
     <title>Document</title>
 </head>
+<nav>
+  <img src="../static/hidden.svg" alt="Logo" />
+  <ul>
+    <li><a href="App.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Team.html">Team</a></li>
+  </ul>
+</nav>
 <div className="Team">
     <h1 className="Team-header">Meet Our Team</h1>
     <div className="Team-members">
@@ -18,4 +29,10 @@
       ))}
     </div>
 </div>
+<footer>
+  <a href="https://darknetdiaries.com/episode/">Darknet Diaries</a>
+  <a href="#">Have I Been Pwned</a>
+  <a href="#"></a>
+  <p>Copyright &copy; {new Date().getFullYear()}</p>
+</footer>
 </html>
