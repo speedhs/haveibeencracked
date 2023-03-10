@@ -10,37 +10,38 @@
     <link rel="stylesheet" href="../static/Footer.css">
     <title>Document</title>
 </head>
-<nav>
-  <img src="../static/hidden.svg" alt="Logo" />
-  <ul>
-    <li><a href="App.html">Home</a></li>
-    <li><a href="About.html">About</a></li>
-    <li><a href="Team.html">Team</a></li>
-  </ul>
-</nav>
+<body>
+  <nav>
+    <img src="../static/hidden.svg" alt="Logo" />
+    <ul>
+      <li><a href="{{ url_for('App') }}">Home</a></li>
+      <li><a href="{{url_for('About')}}">About</a></li>
+      <li><a href="{{url_for('Team')}}">Team</a></li>
+    </ul>
+  </nav>
 
-<div class="App">
+  <div class="App">
     <header class="App-header">
       <img src="../static/hibc.png" class="App-logo" alt="logo" />
     </header>
-    <body>
 
-      <div class='cracked'>
+    <div class='cracked'>
       <form class='input' method="POST">
-        <label >
-        <input type="text" placeholder="password" name="password" />
+        <label>
+          <input type="text" placeholder="password" name="password" />
         </label>
         <input type="submit"  value="cracked?" />
       </form>
-      </div>
-      
-      </body>
-</div>
-<footer>
-  <a href="https://darknetdiaries.com/episode/">Darknet Diaries</a>
-  <a href="#">Have I Been Pwned</a>
-  <a href="#"></a>
-  <p>Copyright &copy; {new Date().getFullYear()}</p>
-</footer>
+    </div>
 
+  </div>
+
+  <footer>
+    <a href="https://darknetdiaries.com/episode/">Darknet Diaries</a>
+    <a href="#">Have I Been Pwned</a>
+    <a href="#"></a>
+
+  </footer>
+
+</body>
 </html>
