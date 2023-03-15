@@ -24,8 +24,5 @@ def Team():
     return render_template('Team.html')
 
 
-
-
-
 if __name__ == '__main__':
     app.run(debug = True)
