@@ -1,5 +1,7 @@
 nav {
- 
+    position: relative;
+    
+
     display: flex;
     justify-content: center;
     /*background-color: purple;*/

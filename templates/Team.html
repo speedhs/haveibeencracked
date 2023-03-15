@@ -8,28 +8,48 @@
     <link rel="stylesheet" href="../static/Navbar.css">
     <link rel="stylesheet" href="../static/Footer.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
     <title>Cracked?</title>
 </head>
-<nav>
-  <img src="../static/hidden.svg" alt="Logo" />
-  <ul>
-    <li><a href="{{url_for('App')}}">Home</a></li>
-    <li><a href="{{url_for('About')}}">About</a></li>
-    <li><a href="{{url_for('Team')}}">Team</a></li>
-  </ul>
-</nav>
-<div className="Team">
-    <h1 className="Team-header">Meet Our Team</h1>
-    <div className="Team-members">
-      {teamMembers.map(member => (
-        <div className="Team-member">
-          <img src={member.image} alt={`${member.name} headshot`} className="Team-member-image" />
-          <h2 className="Team-member-name">{member.name}</h2>
-          <p className="Team-member-position">{member.position}</p>
-        </div>
-      ))}
-    </div>
+<header>
+  <nav>
+    <img src="../static/hidden.svg" alt="Logo" />
+    <ul>
+      <li><a href="{{url_for('App')}}">Home</a></li>
+      <li><a href="{{url_for('About')}}">About</a></li>
+      <li><a href="{{url_for('Team')}}">Team</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+<div class="container">
+  <div class="card">
+    <h3 class="title">Fateh</h3>
+    <<img class = "dp" src="../static/Fateh.png" alt="W Sage" />
+  </div>
+  <div class="card">
+    <h3 class="title">Ansh</h3>
+    <<img class = "dp" src="../static/Ansh.png" alt="Dash out" />
+    
+  </div>
+  <div class="card">
+    <h3 class="title">Harsh</h3>
+    <<img class = "dp"src="../static/Harsh.png" alt="Fire in the hole" />
+    
+  </div>
+  <div class="card">
+    <h3 class="title">StackOverflow</h3>
+    <<img class = "dp"src="../static/Stack.png" alt="Fire in the hole" />
+    
+  </div>
 </div>
+
+<div class = "random">
+<p>As a group of 3rd year college students, we completed this exciting project that we are extremely proud of. Our project focused on developing a website that helps individuals determine if their password has been leaked in any data breaches.</p>
+</div>
+</body>
+
 <footer>
   <a href="https://darknetdiaries.com/episode/">Darknet Diaries</a>
   <a href="#">Have I Been Pwned</a>
