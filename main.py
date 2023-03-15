@@ -8,7 +8,7 @@ app = Flask(__name__)
 def App():
     if request.method == "POST":
         password = request.form.get("password")
-        print(password)
+        
     return render_template('App.html')
 
 @app.route('/About')
@@ -26,3 +26,4 @@ def Team():
 
 if __name__ == '__main__':
     app.run(debug = True)
+    #print(ir(password))
