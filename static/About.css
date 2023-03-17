@@ -3,8 +3,8 @@
   }
   
   .About-header {
-    background-color: #240046;
-    min-height: 100vh;
+    background-color: #c77dff;
+    min-height: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,12 +14,74 @@
   }
   
   .About-logo {
-    height: 15vmin;
+    height: 50vmin;
   }
   
   .about {
-    background-color: #240046;
+    background: linear-gradient(to top,#9d4edd,#c77dff);
     color: white;
     padding: 2vh;
+    font-size: 200%;
   }
   
+
+
+.slider {
+  background: #ffffff;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+  height: 100px;
+  margin: 0%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  justify-content: last baseline;
+}
+
+.slider::before,
+.slider::after {
+  background-color: #c77dff;
+  content: "";
+  height: 200px;
+  width: 100px;
+  z-index: 4;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slide {
+  height: 100px;
+  width: 250px;
+}
+
+.slide img {
+  height: 100%; /* Set the height of the image to fill the slide container */
+  width: auto; /* Set the width to auto to maintain aspect ratio */
+  display: block; /* Set the display to block to center the image */
+  margin: auto; /* Set margin to auto to center the image */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+/* mixin white-gradient is replaced with the background property in .slider::before and .slider::after */

@@ -53,3 +53,7 @@
   background: linear-gradient(to left, #5a189a, #240046, #10002b);
   color: white;
 }
+body{
+  width:100%;
+  height: 100%;
+}
