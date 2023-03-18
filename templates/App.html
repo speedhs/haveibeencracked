@@ -13,9 +13,9 @@
 <nav>
   <img src="../static/hidden.svg" alt="Logo" />
   <ul>
-    <li><a href="App.html">Home</a></li>
-    <li><a href="About.html">About</a></li>
-    <li><a href="Team.html">Team</a></li>
+   <li><a href="{{url_for('App')}}">Home</a></li>
+    <li><a href="{{url_for('About')}}">About</a></li>
+    <li><a href="{{url_for('Team')}}">Team</a></li>
   </ul>
 </nav>
 
@@ -32,8 +32,12 @@
         </label>
         <input type="submit"  value="cracked?" />
       </form>
+          {% if result %}
+    <td><p><b>Leaked Passwords:</b> {{result}} </p></td>
+{% endif %}
+
       </div>
-      
+
       </body>
 </div>
 <footer>
