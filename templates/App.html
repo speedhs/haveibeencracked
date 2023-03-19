@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+import my from App.js
 <html lang="en">
 <head>
 
@@ -8,7 +9,9 @@
     <link rel="stylesheet" href="../static/App.css">
     <link rel="stylesheet" href="../static/Navbar.css">
     <link rel="stylesheet" href="../static/Footer.css">
-    <title>Document</title>
+    <script src = "/templates/App.js"></script>
+    <title>Cracked?</title>
+    
 </head>
 <nav>
   <img src="../static/hidden.svg" alt="Logo" />
@@ -18,33 +21,34 @@
     <li><a href="{{url_for('Team')}}">Team</a></li>
   </ul>
 </nav>
-
+<body>
 <div class="App">
     <header class="App-header">
       <img src="../static/hibc.png" class="App-logo" alt="logo" />
     </header>
-    <body>
 
       <div class='cracked'>
       <form class='input' method="POST">
         <label >
         <input type="text" placeholder="password" name="password" />
         </label>
-        <input type="submit"  value="cracked?" />
+        <input type="submit"  value="cracked?" onclick=my()/>
       </form>
           {% if result %}
     <td><p><b>Leaked Passwords:</b> {{result}} </p></td>
 {% endif %}
 
       </div>
+     
+      
+    </div>  
 
-      </body>
-</div>
+</body>
 <footer>
   <a href="https://darknetdiaries.com/episode/">Darknet Diaries</a>
   <a href="#">Have I Been Pwned</a>
   <a href="#"></a>
-  <p>Copyright &copy; {new Date().getFullYear()}</p>
+  <p><script>document.write("Copyright @ "+ new Date().getFullYear()+" AverageValoEnjoyers" );</script></p>
 </footer>
 
 </html>

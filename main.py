@@ -5,11 +5,12 @@ app = Flask(__name__)
 
 @app.route('/', methods =["GET", "POST"])
 
+
 def App():
     if request.method == "POST":
         user_password = request.form.get("password")
-        data = user_password
-        return render_template('app.html', result = user_password)
+        data = transform(user_password)
+        return render_template('app.html', result = data)
 
     return render_template('app.html')
 
@@ -25,6 +26,7 @@ def Team():
 
     return render_template('team.html')
 
-
+def transform(p):
+    return p+"pad"
 if __name__ == '__main__':
     app.run(debug = True)
